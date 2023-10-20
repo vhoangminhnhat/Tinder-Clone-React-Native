@@ -1,7 +1,9 @@
 import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React from 'react';
+import useAuth from '../../hooks/useAuth';
 
-const Login = () => {
+const Login: React.FC = () => {
+  const {userName, password} = useAuth();
   return (
     <View>
       <Text>This is login Page</Text>
